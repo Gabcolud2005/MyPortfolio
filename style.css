@@ -1,0 +1,360 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: #fff;
+    min-height: 100vh;
+    padding: 2rem 4rem;
+}
+
+.hero-header {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    color: #f6f1f1;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.8rem 1rem;
+    border-radius: 999px;
+    transition: 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+    color: #255af9;
+    background: rgba(37, 90, 249, 0.08);
+    box-shadow: inset 0 0 0 1px rgba(37, 90, 249, 0.3);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    min-height: calc(100vh - 120px);
+    padding: 2rem 0 0;
+}
+
+.home-image {
+    position: relative;
+    flex: 1.1;
+    min-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.home-image img {
+    position: relative;
+    z-index: 1;
+    width: 440px;
+    height: 610px;
+    object-fit: cover;
+    border-radius: 48% 48% 48% 48% / 50% 50% 50% 50%;
+    filter: grayscale(0.1) contrast(1.1) brightness(0.75);
+    transform: translateX(10px);
+}
+
+.home-content {
+    flex: 1.2;
+    padding-right: 1rem;
+}
+
+.home-content h1 {
+    font-size: clamp(4rem, 5vw, 7rem);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 2rem;
+    color: #f3ecec;
+}
+
+.typed-line {
+    display: inline-block;
+    color: #f3ecec;
+    min-height: 1.2em;
+}
+
+.typed-line.second {
+    color: #f3ecec;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.08em;
+    height: 0.9em;
+    background: #255af9;
+    vertical-align: middle;
+    animation: blink 0.8s infinite;
+    margin-left: 0.2rem;
+}
+
+.second-cursor {
+    margin-left: 0.2rem;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+}
+
+.home-content h1 span {
+    color: #255af9;
+}
+
+.description {
+    max-width: 620px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.social-icon a {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #255af9;
+    color: #255af9;
+    background: transparent;
+    font-size: 1.8rem;
+    transition: 0.25s ease;
+}
+
+.social-icon a:hover {
+    background: #255af9;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #255af9;
+    padding: 1.2rem 3.2rem;
+    border-radius: 999px;
+    border: 1px solid #255af9;
+    background: transparent;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    background: rgba(37, 90, 249, 0.1);
+    transform: translateY(-2px);
+}
+
+.content-sections {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 6% 8rem;
+}
+
+.info-section {
+    padding: 4rem 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.info-section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #255af9;
+    
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 1.8rem;
+    padding: 2rem;
+    border-left: 3px solid #255af9;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.card h3,
+.timeline-item h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.card p,
+.timeline-item p,
+.contact-section p {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.skills-list span {
+    background: rgba(37, 90, 249, 0.08);
+    border: 1px solid rgba(37, 90, 249, 0.5);
+    color: #255af9;
+    padding: 1rem 1.6rem;
+    border-radius: 999px;
+    font-size: 1.4rem;
+}
+
+.timeline-item {
+    background: rgba(255,255,255,0.02);
+    border-left: 3px solid #255af9;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    max-width: 700px;
+}
+
+.contact-section {
+    padding-bottom: 2rem;
+    border-left: 3px solid #255af9;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 980px) {
+    body {
+        padding: 2rem 2rem 4rem;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .home-image {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .home-content {
+        padding-right: 0;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-icon {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1.5rem 1.5rem 3rem;
+    }
+
+    .nav-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 0.8rem 1.4rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .logo {
+        font-size: 2.6rem;
+    }
+
+    .home-image::before {
+        width: 420px;
+        height: 420px;
+        left: 12%;
+        top: 18%;
+    }
+
+    .home-image img {
+        width: 280px;
+        height: 380px;
+    }
+
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .description {
+        font-size: 1.4rem;
+    }
+
+    .info-section h2 {
+        font-size: 2.4rem;
+    }
+}
